@@ -31,28 +31,30 @@ section.box1 {
 
 .logo {
     height: min-content;
-    width: 100%;
+    width:  ;
     max-width: 300px;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 .logo img {
     height: min-content;
+    object-fit: cover;
     width: 100%;
-    border-radius: 50%;
+    border-radius: 100%;
     vertical-align: middle;
 }
 
 .img-logo:hover {
     border-color: black;
-
+    object-fit: cover;
 }
 
 .img-logo {
-    width: 100%;
-    height: max-content;
+    object-fit: cover;
+    width: 17rem;   
+    height:30rem;
     border: 2px solid white;
-    border-radius: 50%;
+    border-radius: 100%;
     padding: 2px;
     transition: 0.3s;
 }
