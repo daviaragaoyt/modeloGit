@@ -18,8 +18,6 @@ body {
 }
 
 section.box1 {
-    background-image: url(img/modeloGit/mistico.avif);
-
     margin-top: 100px;
 }
 
@@ -31,33 +29,27 @@ section.box1 {
 
 .logo {
     height: min-content;
-    width:  ;
-    max-width: 300px;
-    border-radius: 100%;
+    width: 17rem ;
 }
 
-.logo img {
-    height: min-content;
+
+.img-logo img {
     object-fit: cover;
-    width: 100%;
-    border-radius: 100%;
-    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: 0.3s;
+    width: 18rem;
+    height:18rem;
+   
 }
 
 .img-logo:hover {
-    border-color: black;
+    border-color:solid black ;
     object-fit: cover;
-}
-
-.img-logo {
-    object-fit: cover;
-    width: 17rem;   
-    height:30rem;
-    border: 2px solid white;
-    border-radius: 100%;
-    padding: 2px;
     transition: 0.3s;
 }
+
+
 
 .desc {
     text-align: center;
