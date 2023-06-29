@@ -14,15 +14,14 @@
 </head>
 
 <body>
-
+    
     <div class="button">
         
-        <div class="ball">
+         <div class="ball">
 
             </div>
 
 </div>
-
 
     <section class="box1">
 
@@ -67,14 +66,12 @@
 
         </div><!--center-->
 
-    </section><!--box1-->
-
-    <script src="Script.js"></script>
+    </section><!--box1-->   
     <script>
-            document.querySelector('.ball').addEventListener('click',()=>{
+            document.querySelector('.ball').addEventListener('click',(e)=>{
                 e.target.classList.toggle('ball-move');
                 document.body.classList.toggle('dark');
-            })
+            });
 
     </script>
 

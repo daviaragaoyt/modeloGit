@@ -9,9 +9,8 @@
     outline: none;
 }
 
-body {
+body{
     display: flex;
-    
     justify-content: center;
     background-color: #EDEDED;
     width: 100%;
@@ -21,7 +20,7 @@ body {
 
 .button {
     position:relative ;
-    width: 100px;
+    width: 70px;
     height: 40px;
     border-radius: 25px;
     box-shadow: 0 0 2.5px 0 #fbff00;
