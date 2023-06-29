@@ -8,48 +8,49 @@
     box-sizing: border-box;
     outline: none;
 }
- body{
-
-    background-color: rgb(235, 173, 173);
+    
+body {
+    background-color: rgb(235,173, 173);
     height: 100vh;
-    transition:background 1s;
-
-} 
-
-.button {
-    display: flex;
-    position:relative ;
-    width: 70px;
-    height: 40px;
-    border-radius: 25px;
-    box-shadow: 0 0 2.5px 0 #000000;
-    cursor: pointer;
-    background-color: rgb(151, 151, 151);
-}  
-
-.header{
-    display: flex;
-
-
+    transition: background 1s;
 }
 
-.ball   {
+.button {
     position: relative;
+    width: 70px;
+    height: 40px;
+    border-radius: 25px ;
+    box-shadow: 0 0 2.5px 0 white;
+    cursor:pointer;
+    background-color:rgba(235, 173, 173, 0.171)
+}
+
+.ball {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 40px;
     height: 100%;
     border-radius: 50%;
-    background-color: rgb(37, 69, 70);
+    background-color: #5a5858;
     transition: left 1s;
-
 }
 
 .ball-move {
-left:calc(100%-40px);
-
+    left: calc(100% - 40px);
+    background-color: white;
+    
 }
 
 .dark {
+    
     background-color: #333;
+}
+
+.header {
+    display: flex;
+
+
 }
 
 .center {
@@ -70,7 +71,7 @@ section.box1 {
 
 .logo {
     height: min-content;
-    width: 17rem ;
+    width: 17rem;
 }
 
 
@@ -80,12 +81,12 @@ section.box1 {
     border-radius: 50%;
     transition: 0.3s;
     width: 18rem;
-    height:18rem;
-   
+    height: 18rem;
+
 }
 
 .img-logo:hover {
-    border-color:solid black ;
+    border-color: solid black;
     object-fit: cover;
     transition: 0.3s;
 }
@@ -106,8 +107,8 @@ section.box1 {
     color: #ffffff;
 }
 
-.desc p .desc h2:hover{
-    background: white;    
+.desc p .desc h2:hover {
+    background: white;
     color: #0077ff;
     transition: 1s;
 
@@ -165,4 +166,3 @@ section.box1 {
     font-size: 25px;
     margin: 0 5px;
 }
-
