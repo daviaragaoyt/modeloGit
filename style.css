@@ -8,30 +8,35 @@
     box-sizing: border-box;
     outline: none;
 }
+ body{
 
-body{
-    display: flex;
-    justify-content: center;
-    background-color: #EDEDED;
-    width: 100%;
+    background-color: #333;
     height: 100vh;
-    transition: background 1s;
-}
+    transition:background 1s;
+
+} 
 
 .button {
+    display: flex;
     position:relative ;
     width: 70px;
     height: 40px;
     border-radius: 25px;
-    box-shadow: 0 0 2.5px 0 #fbff00;
+    box-shadow: 0 0 2.5px 0 #000000;
     cursor: pointer;
     background-color: rgb(151, 151, 151);
-}   
+}  
+
+.header{
+    display: flex;
+
+
+}
 
 .ball   {
-    position: absolute;
+    position: relative;
     width: 40px;
-    height: 100px;
+    height: 100%;
     border-radius: 50%;
     background-color: rgb(37, 69, 70);
     transition: left 1s;
@@ -98,7 +103,14 @@ section.box1 {
 }
 
 .desc p {
-    color: #dfdfdf;
+    color: #ffffff;
+}
+
+.desc p .desc h2:hover{
+    background: white;    
+    color: #0077ff;
+    transition: 1s;
+
 }
 
 .link {
