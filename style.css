@@ -117,3 +117,34 @@ section.box1 {
     font-size: 25px;
     margin: 0 5px;
 }
+
+.button {
+    position:relative ;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 #fbff00;
+    cursor: pointer;
+    background-color: white;
+}   
+
+.ball   {
+    position: absolute;
+    top 0;
+    left: 0;
+    width: 40px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    transition: left 1s;
+
+}
+
+.ball-move {
+left:calc(100%-40px);
+
+}
+
+.dark {
+    background-color: #0077ff;
+}
