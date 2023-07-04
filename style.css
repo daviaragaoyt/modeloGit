@@ -153,7 +153,6 @@ section.box1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 5px;
     position: relative;
     height:25px;
@@ -194,3 +193,17 @@ section.box1 {
    
 }
 
+.fa-whatsapp{
+
+    color: rgb(115, 255, 0);
+}
+
+.fa-instagram{
+
+    color: rgb(217, 66, 247)
+}
+
+.fa-tiktok:hover{
+
+    color: black;
+}
