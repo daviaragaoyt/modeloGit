@@ -147,7 +147,7 @@ section.box1 {
 }
 
 .label {
-    background-color: #111;
+    background-color: #333;
     border-radius: 50px;
     cursor: pointer;
     display: flex;
