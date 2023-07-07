@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: rgb(243, 204, 204);
+    background-color: rgb(40, 132, 253);
     height: 100vh;
     transition: background 1s;
 }
@@ -51,7 +51,7 @@ section.box1 {
 
 .img-logo img {
     object-fit: cover;
-    border: 2px solid #333;
+    border: 2px solid white;
     border-radius: 50%;
     transition: 0.3s;
     width: 18rem;
@@ -155,14 +155,14 @@ section.box1 {
     align-items: center;
     padding: 5px;
     position: relative;
-    height:25px;
-     width: 50px;
+    height: 25px;
+    width: 50px;
     transform: scale(1.5);
-  
-  }
-  
-  
-  .label .ball {
+
+}
+
+
+.label .ball {
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
@@ -172,44 +172,43 @@ section.box1 {
     width: 22px;
     transform: translateX(0px);
     transition: transform 0.4s linear;
-  }
-  
-  .checkbox:checked + .label .ball {
-    transform: translateX(24px);
-  }
-  
-  .fa-moon {
-    color: white
-  }
-  
-  .fa-sun {
-    color: rgba(255, 255, 123, 0.945);
-  }
-
-
-.ball-move  {
-    left: calc(100% - 40px);
-    background-color: white;
-   
 }
 
-.fa-whatsapp{
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: white
+}
+
+.fa-sun {
+    color: rgba(255, 255, 123, 0.945);
+}
+
+
+.ball-move {
+    left: calc(100% - 40px);
+    background-color: white;
+
+}
+
+.fa-whatsapp {
 
     color: rgb(115, 255, 0);
 }
 
-.fa-instagram{
+.fa-instagram {
 
     color: rgb(217, 66, 247)
 }
 
-.fa-tiktok:hover{
+.fa-tiktok:hover {
 
     color: black;
 }
 
-.checkbox{
-visibility: hidden;
+.checkbox {
+    visibility: hidden;
 
 }
-
