@@ -10,31 +10,29 @@ const senhaInput = document.querySelector("senha");
 function submitFormulario(event) {
     event.preventDefault();
 
-    //Verifica se o nome esta vazio
-    // if (event.srcElement[0].value === "") {
-    //     alert("Por favor, preecha seu nome");
-    //     return;
-    // }
+    // Verifica se o nome esta vazio
+    if (event.srcElement[0].value === "") {
+        alert("Por favor, preecha seu nome");
+        return;
+    }
 
-    // //verifica a data 
-    // if (event.srcElement[1].value === "") {
-    //     alert("Por favor, preencha sua data de nascimento");
-    //     return;
-    // }
+    //verifica a data 
+    if (event.srcElement[1].value === "") {
+        alert("Por favor, preencha sua data de nascimento");
+        return;
+    }
 
-    // //Verifica se o email esta preenchido
-    // if (event.srcElement[2].value === "") {
-    //     alert("Por favor, preencha com seu email");
-    //     return;
-    // }
+    //Verifica se o email esta preenchido
+    if (event.srcElement[2].value === "") {
+        alert("Por favor, preencha com seu email");
+        return;
+    }
 
-    // //Verificar se a está preenchida
-    // if (validaPassword(event.srcElement[3].value, 8)) {
-    //     alert("A senha precisa de 8 digitos minimos ");
-    //     return;
-    // }
-
-    string.link("google.com")
+    //Verificar se a está preenchida
+    if (validaPassword(event.srcElement[3].value, 8)) {
+        alert("A senha precisa de 8 digitos minimos ");
+      return;
+    }
 }
 
 form.addEventListener("submit", (event) => {
