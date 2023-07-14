@@ -7,11 +7,46 @@ const nameInput = document.querySelector("#name");
 const emailInput = document.querySelector("email");
 const senhaInput = document.querySelector("senha");
 
+function submitFormulario(event) {
+    event.preventDefault();
+
+    console.log("Nome:", event.srcElement[0].value)
+    console.log("Data:", event.srcElement[1].value)
+    console.log("Email:", event.srcElement[2].value)
+    console.log("Senha:", event.srcElement[3].value)
+
+    //Verifica se o nome esta vazio
+    if (event.srcElement[0].value === "") {
+        alert("Por favor, preecha seu nome");
+        return;
+    }
+
+    //verifica a data 
+    if (event.srcElement[1].value === "") {
+        alert("Por favor, preencha sua data de nascimento");
+        return;
+    }
+
+    //Verifica se o email esta preenchido
+    if (event.srcElement[2].value === "") {
+        alert("Por favor, preencha com seu email");
+        return;
+    }
+
+    //Verificar se a está preenchida
+    if (validaPassword(event.srcElement[3].value, 8)) {
+        alert("A senha precisa de 8 digitos minimos ");
+        return;
+    }
+}
+
 form.addEventListener("submit", (event) => {
     event.preventDefault();
 
+    console.log('galinha', event)
+
     //Verifica se o nome esta vazio
-    if (nameInput.value === "") {
+    if (nameInput.value === "" || nameInput.value === null) {
         alert("Por favor, preecha seu nome");
         return;
     }
@@ -22,7 +57,7 @@ form.addEventListener("submit", (event) => {
         return;
     }
     //Verificar se a está preenchida
-    if (!validaPassoword(senhaInput.value, 8)) {
+    if (!validaPassword(senhaInput.value, 8)) {
         alert("A senha precisa de 8 digitos minimos ");
         return;
     }
@@ -48,12 +83,12 @@ function isEmailValid(email) {
 
 //Função que valida a senha
 
-function validaPassoword(senha, minDigits) {
+function validaPassword(senha, minDigits) {
 
     if (senha.length >= minDigits) {
-        return true
+        return false
     }
     //Senhas invalidas
-    return false
+    return true
 }
 
