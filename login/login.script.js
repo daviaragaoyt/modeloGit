@@ -8,7 +8,6 @@ const emailInput = document.querySelector("email");
 const senhaInput = document.querySelector("senha");
 
 function submitFormulario(event) {
-    event.preventDefault();
 
     // Verifica se o nome esta vazio
     if (event.srcElement[0].value === "") {
