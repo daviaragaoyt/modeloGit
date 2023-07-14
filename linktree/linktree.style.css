@@ -24,7 +24,7 @@ body {
 
 .header {
     display: flex;
-
+    margin:25px;
 }
 
 .center {
