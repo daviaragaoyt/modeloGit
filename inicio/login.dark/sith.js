@@ -9,8 +9,7 @@ const senhaInput = document.querySelector("senha");
 
 function submitFormulario(event) {
     
-    event.preventDefault()
-    console.log('galinha:', event);
+
 
     // Verifica se o nome esta vazio
     if (event.srcElement[0].value === "") {
