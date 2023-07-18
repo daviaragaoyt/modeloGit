@@ -1,4 +1,4 @@
-/*alert("Obrigado por Acessar!");*/
+alert("Obrigado por Acessar!");
 
 const chk = document.getElementById('chk')
 

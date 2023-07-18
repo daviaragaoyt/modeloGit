@@ -1,4 +1,4 @@
-/*alert("Obrigado por acessar!");*/
+alert("Obrigado por acessar!");
 
 const form = document.querySelector("#form");
 const nameInput = document.querySelector("#name");
