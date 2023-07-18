@@ -10,11 +10,12 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
+    background-position: center;
 }
 
 h2 {
+    height: 25px;
     text-align: center;
-    justify-content: center;
 }
 
 .texto {
@@ -26,12 +27,27 @@ h2 {
     backdrop-filter: blur(20px);
 }
 
-.container {
-    text-align: center;
-    width: 240px;
-    height: 100px;
+.containerJedi {
+    border-radius: 20px;
+    border: 1px solid black;
+    backdrop-filter: blur(20px);
 }
 
+.containerJedi:hover {
+    box-shadow: 0 0 15px rgb(18, 255, 18);
+    text-shadow: 0 0 15px rgb(18, 255, 18);
+}
+
+.containerSith {
+    border-radius: 20px;
+    border: 1px solid black;
+    backdrop-filter: blur(20px);
+}
+
+.containerSith:hover {
+    box-shadow: 0 0 15px red;
+    text-shadow: 0 0 15px red;
+}
 
 .opcao:hover {
     color: black;
@@ -58,23 +74,20 @@ select {
     cursor: pointer;
     transition: all 1s ease-in-out;
     backdrop-filter: blur(20px);
-
+    border-radius: 20px;
 }
 
 select:hover {
     box-shadow: 0 0 15px white;
     text-shadow: 0 0 15px white;
-    border-radius: 20px;
-
 }
 
-.enviar {
-
+.enviarJedi {
     position: relative;
-    top: 60%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    padding: 15px 45px;
+    padding: 15px;
     font-size: 20px;
     background: transparent;
     border: 2px solid #f7f7f7;
@@ -82,16 +95,31 @@ select:hover {
     cursor: pointer;
     transition: 1s;
     backdrop-filter: blur(20px);
+    border-radius: 20px;
 }
 
-.enviar[select="Jedi"]:hover {
+.enviarSith {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #f7f7f7;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 1s;
+    backdrop-filter: blur(20px);
     border-radius: 20px;
+}
+
+.enviarJedi:hover {
     box-shadow: 0 0 15px rgb(18, 255, 18);
     text-shadow: 0 0 15px rgb(18, 255, 18);
 }
 
-.enviar[select="Jedi"]:hover {
-
+.enviarSith:hover {
     border-radius: 20px;
     box-shadow: 0 0 15px red;
     text-shadow: 0 0 15px red;

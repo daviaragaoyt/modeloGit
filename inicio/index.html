@@ -7,22 +7,21 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-       
-        <div class="container"
-            <form onsubmit="redirecionar(opcoes)"
-                action="https://www.youtube.com/">
 
+        <div id="bloco" class="containerJedi">
+            <form id="form" onsubmit="redirecionar(opcoes)"
+                action>
                 <h2 class="texto" for="opcoes">Escolha uma opção:</h2>
-                <select id="opcoes">
-                    <option value="">Selecione</option>
-                    <option value="opcao1" class="jedi">JEDI</option>
-                    <option value="opcao2" class="sith">SITH</option>
+                <br><br>
+                <select id="opcoes" onchange="alterarClass()">
+                    <option value>Selecione</option>
+                    <option value="jedi" class="jedi">JEDI</option>
+                    <option value="sith" class="sith">SITH</option>
                 </select>
                 <br><br>
-                <input class="enviar" type="submit"> 
-            </div>
-        </form>
-
-    <script src="script.js"></script>
-</body>
+                <input id="botaoEnviar" class="enviarJedi" type="submit">
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
