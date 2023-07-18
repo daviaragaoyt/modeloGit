@@ -2,7 +2,8 @@
 
 body {
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be384998-a801-46c0-a893-1054e137bcf0/d9pwd1e-7067bbf0-792f-4f28-b843-1449a93224df.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlMzg0OTk4LWE4MDEtNDZjMC1hODkzLTEwNTRlMTM3YmNmMFwvZDlwd2QxZS03MDY3YmJmMC03OTJmLTRmMjgtYjg0My0xNDQ5YTkzMjI0ZGYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XfM7uqe2hFZAc-ulBE27jp68PfE6Qx57fPykmoGt52A");
-    
+    background-position: center;
+    height: 100vh;
 }
 
 header {
@@ -15,8 +16,8 @@ header {
 
 .container {
 
-    width: 1950px;
-    height: 1050px;
+    width: 100%;
+    height: 1000px;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -25,9 +26,9 @@ header {
 
 .login {
 
-    width: 1200px;
+    width: 80%;
     max-width: 600px;
-    height: 450px;
+    height: 50%;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -38,8 +39,9 @@ header {
     backdrop-filter: blur(20px);
 
 }
-.login:hover{
-    box-shadow:0 0 15px rgb(60, 255, 0);
+
+.login:hover {
+    box-shadow: 0 0 15px rgb(60, 255, 0);
     text-shadow: 0 0 15px rgb(60, 255, 0);
     transition: 1s;
 
@@ -55,7 +57,7 @@ input {
     background: #ffffff10;
 }
 
-input:hover{
+input:hover {
     box-shadow: 0 0 15px rgb(60, 255, 0);
     text-shadow: 0 0 15px rgb(60, 255, 0);
     transition: 0.7s;
@@ -66,12 +68,13 @@ input:hover{
 
 input[type="submit"] {
     background-color: rgba(241, 241, 241, 0);
-   
+
 
 }
-input[type="submit"]:hover{
+
+input[type="submit"]:hover {
     background-color: rgb(60, 255, 0);
-    box-shadow: 0 0 15px rgb(60,255,0);
+    box-shadow: 0 0 15px rgb(60, 255, 0);
     text-shadow: 0 0 15px rgb(60, 255, 0);
     transition: 2s;
 
@@ -79,22 +82,17 @@ input[type="submit"]:hover{
 
 
 h1 {
-    height: 10px;
-    text-align: center;
+
+    font-size: larger;
     color: white;
-
-
 }
 
 h2 {
-    height: 2px;
-    text-align: center;
+    font-size: larger;
     color: white;
-
 }
 
 h3 {
-    height: 2px;
-    text-align: center;
+    font-size: larger;
     color: white;
 }
