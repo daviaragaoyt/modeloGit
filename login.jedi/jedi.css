@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/be384998-a801-46c0-a893-1054e137bcf0/d9pwd1e-7067bbf0-792f-4f28-b843-1449a93224df.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2JlMzg0OTk4LWE4MDEtNDZjMC1hODkzLTEwNTRlMTM3YmNmMFwvZDlwd2QxZS03MDY3YmJmMC03OTJmLTRmMjgtYjg0My0xNDQ5YTkzMjI0ZGYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XfM7uqe2hFZAc-ulBE27jp68PfE6Qx57fPykmoGt52A");
+    
+}
+
+header {
+
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+
+    width: 1950px;
+    height: 1050px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+
+    width: 1200px;
+    max-width: 600px;
+    height: 450px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #29212110;
+    border: 2px solid black;
+    backdrop-filter: blur(20px);
+
+}
+.login:hover{
+    box-shadow:0 0 15px rgb(60, 255, 0);
+    text-shadow: 0 0 15px rgb(60, 255, 0);
+    transition: 1s;
+
+}
+
+input {
+    color: black;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 2px solid black;
+    background: #ffffff10;
+}
+
+input:hover{
+    box-shadow: 0 0 15px rgb(60, 255, 0);
+    text-shadow: 0 0 15px rgb(60, 255, 0);
+    transition: 0.7s;
+    border: rgb(60, 255, 0);
+    border-radius: 20px;
+
+}
+
+input[type="submit"] {
+    background-color: rgba(241, 241, 241, 0);
+   
+
+}
+input[type="submit"]:hover{
+    background-color: rgb(60, 255, 0);
+    box-shadow: 0 0 15px rgb(60,255,0);
+    text-shadow: 0 0 15px rgb(60, 255, 0);
+    transition: 2s;
+
+}
+
+
+h1 {
+    height: 10px;
+    text-align: center;
+    color: white;
+
+
+}
+
+h2 {
+    height: 2px;
+    text-align: center;
+    color: white;
+
+}
+
+h3 {
+    height: 2px;
+    text-align: center;
+    color: white;
+}

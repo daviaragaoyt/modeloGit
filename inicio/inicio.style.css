@@ -1,0 +1,98 @@
+* {
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url("https://s1.1zoom.me/b5050/958/Clone_trooper_Star_Wars_Movies_Helmet_518354_1920x1080.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    justify-content: center;
+}
+
+.texto {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(20px);
+}
+
+.container {
+    text-align: center;
+    width: 240px;
+    height: 100px;
+}
+
+
+.opcao:hover {
+    color: black;
+}
+
+.jedi {
+    color: #00bc40;
+}
+
+.sith {
+    color: red;
+}
+
+select {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 45px;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    backdrop-filter: blur(20px);
+
+}
+
+select:hover {
+    box-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px white;
+    border-radius: 20px;
+
+}
+
+.enviar {
+
+    position: relative;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding: 15px 45px;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid #f7f7f7;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 1s;
+    backdrop-filter: blur(20px);
+}
+
+.enviar[select="Jedi"]:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(18, 255, 18);
+    text-shadow: 0 0 15px rgb(18, 255, 18);
+}
+
+.enviar[select="Jedi"]:hover {
+
+    border-radius: 20px;
+    box-shadow: 0 0 15px red;
+    text-shadow: 0 0 15px red;
+}

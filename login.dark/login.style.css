@@ -2,7 +2,7 @@
 
 body {
     background-image: url("https://cdn.wallpapersafari.com/85/31/pMqAJe.jpg");
-    background-position: absolute;
+    
 }
 
 header {
@@ -38,6 +38,12 @@ header {
     backdrop-filter: blur(20px);
 
 }
+.login:hover{
+    box-shadow:0 0 15px red;
+    text-shadow: 0 0 15px red;
+    transition: 1s;
+
+}
 
 input {
     color: black;
@@ -45,15 +51,32 @@ input {
     height: 40px;
     border-radius: 5px;
     margin: 10px 0;
-    border: 2px solid white;
+    border: 2px solid black;
     background: #ffffff10;
 }
 
-input[type="submit"] {
-
-    background-image: linear-gradient(45deg, #f37335, #fdc830);
+input:hover{
+    box-shadow: 0 0 15px red;
+    text-shadow: 0 0 15px red;
+    transition: 0.7s;
+    border: red;
+    border-radius: 20px;
 
 }
+
+input[type="submit"] {
+    background-color: rgba(241, 241, 241, 0);
+   
+
+}
+input[type="submit"]:hover{
+    background-color: red;
+    box-shadow: 0 0 15px red;
+    text-shadow: 0 0 15px red;
+    transition: 2s;
+
+}
+
 
 h1 {
     height: 10px;
