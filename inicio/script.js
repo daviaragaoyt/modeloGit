@@ -1,3 +1,5 @@
+/*alert("Obrigado por Acessar!");*/
+
 const form = document.querySelector("#form");
 const selectInput = document.querySelector("#name");
 const jediInput = document.querySelector("email");

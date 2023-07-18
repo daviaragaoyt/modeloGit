@@ -14,7 +14,7 @@ header {
 }
 
 .container {
-
+    
     width: 1950px;
     height: 1050px;
     background-size: cover;
@@ -34,7 +34,7 @@ header {
     justify-content: center;
     align-items: center;
     background: #29212110;
-    border: 2px solid black;
+    border: 2px solid red;
     backdrop-filter: blur(20px);
 
 }
@@ -51,11 +51,12 @@ input {
     height: 40px;
     border-radius: 5px;
     margin: 10px 0;
-    border: 2px solid black;
+    border: 2px solid red;
     background: #ffffff10;
 }
 
 input:hover{
+    border-radius: 20px;
     box-shadow: 0 0 15px red;
     text-shadow: 0 0 15px red;
     transition: 0.7s;
