@@ -60,20 +60,21 @@ input:hover{
     text-shadow: 0 0 15px red;
     transition: 0.7s;
     border: red;
-    border-radius: 20px;
-
 }
 
-input[type="submit"] {
+.submit {
     background-color: rgba(241, 241, 241, 0);
+
    
 
 }
-input[type="submit"]:hover{
+.submit:hover{
     background-color: red;
     box-shadow: 0 0 15px red;
     text-shadow: 0 0 15px red;
     transition: 2s;
+    border-radius:20px;
+
 
 }
 
