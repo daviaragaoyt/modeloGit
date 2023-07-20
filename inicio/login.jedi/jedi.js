@@ -62,3 +62,27 @@ function validaPassword(senha, minDigits) {
     //Senhas invalidas
     return true
 }
+
+const meuForm = document.getElementById("meuForm");
+const enviarFormulario = document.getElementById("enviarFormulario");
+const sabre = document.getElementById("sabre");
+
+meuForm.addEventListener("input", () => {
+  if (verificarFormularioPreenchido(meuForm)) {
+    sabre.classList.add("active"); // Ativar o brilho do sabre
+    enviarFormulario.disabled = false; // Habilitar o botão de envio
+  } else {
+    sabre.classList.remove("active"); // Desativar o brilho do sabre
+    enviarFormulario.disabled = true; // Desabilitar o botão de envio
+  }
+});
+
+function verificarFormularioPreenchido(form) {
+  const inputs = form.querySelectorAll("input");
+  for (const input of inputs) {
+    if (!input.value.trim()) {
+      return false; // Se um campo não estiver preenchido, retorna false
+    }
+  }
+  return true; // Todos os campos estão preenchidos, retorna true
+}

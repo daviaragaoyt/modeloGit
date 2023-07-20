@@ -8,7 +8,7 @@ const emailInput = document.querySelector("email");
 const senhaInput = document.querySelector("senha");
 
 function submitFormulario(event) {
-    
+
 
 
     // Verifica se o nome esta vazio
@@ -38,6 +38,8 @@ function submitFormulario(event) {
         alert("A senha precisa de 8 digitos minimos ");
         return;
     }
+
+    
 }
 
 
@@ -67,3 +69,22 @@ function validaPassword(senha, minDigits) {
     return true
 }
 
+const sabre = document.getElementById("sabre");
+
+    sabre.addEventListener("mouseenter", () => {
+        sabre.classList.add("active");
+    });
+
+    sabre.addEventListener("mouseleave", () => {
+        sabre.classList.remove("active");
+    });
+
+    const sabre2 = document.getElementById("sabre2");
+
+    sabre.addEventListener("mouseenter", () => {
+        sabre.classList.add("active2");
+    });
+
+    sabre.addEventListener("mouseleave", () => {
+        sabre.classList.remove("active2");
+    });
