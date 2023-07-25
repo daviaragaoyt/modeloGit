@@ -58,6 +58,7 @@ input:hover {
     text-shadow: 0 0 15px red;
     transition: 0.7s;
     border: red;
+    cursor: pointer;
 }
 
 .submit {
@@ -87,35 +88,71 @@ h3 {
     color: white;
 }
 
+
 .sabre {
-  width: 300px; /* Largura do sabre */
-  height: 20px; /* Altura do sabre */
-  background-color: #888;
-  border: 1px solid rgba(255, 255, 255, 0.699);
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 0 15px red;
-    text-shadow: 0 0 15px red;
+    left: 100px;
+    width: 20px;
+    height: 300px;
+    background-color: #888;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
 }
+
 
 .sabre-blade {
-  width: 100%;
-  height: 20px; /* Altura do sabre */
-  background-color: red; /* Verde */
-  transform-origin: left; /* Define o ponto de origem da animação */
-  transform: scaleX(0); /* Inicia o sabre desligado */
-  transition: transform 1s linear; /* Transição do desligado para ligado */
-  box-shadow: 0 0 15px red;
-    text-shadow: 0 0 15px red;
+    background-color: red;
+    width: 20px;
+    height: 100%;
+    transform-origin: bottom;
+    /*Define o ponto de origem da animação */
+    animation: none;
+    /*Transição inicial de desligado */
 }
 
-
+.sabre-blade:hover{
+    background-color: red;
+    transition: 2s;
+    transform-origin: bottom;
+    animation: bladeGlowOff 0s linear;
+}
 
 .sabre.active .sabre-blade {
-  transform: scaleX(1); /* Liga o sabre ao passar o mouse por cima */
+    animation: bladeGlowOn 0.5s linear forwards;
+    /* Brilho ao passar o mouse */
 }
-
-.sabre.active .sabre-glow {
-  transform: scaleY(1); /* Liga o brilho ao passar o mouse por cima */
-}
+@keyframes bladeGlowOff {
+    from {
+      transform: scaleY(1);
+    }
+    to {
+      transform: scaleY(0);
+    }
+  }
+  
+  @keyframes glowOff {
+    from {
+      top: 100%; /* Inicia o brilho no final do sabre */
+    }
+    to {
+      top: 0; /* Finaliza o brilho no topo do sabre */
+    }
+  }
+  
+  @keyframes bladeGlowOn {
+    from {
+      transform: scaleY(0);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+  
+  @keyframes glowOn {
+    from {
+      top: 100%; /* Inicia o brilho no final do sabre */
+    }
+    to {
+      top: 0; /* Finaliza o brilho no topo do sabre */
+    }
+  }

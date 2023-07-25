@@ -86,3 +86,13 @@ function verificarFormularioPreenchido(form) {
   }
   return true; // Todos os campos estão preenchidos, retorna true
 }
+
+const sabreJedi = document.getElementById("sabreJedi");
+
+sabre.addEventListener("mouseenter", () => {
+  sabre.classList.add("active");
+});
+
+sabre.addEventListener("mouseleave", () => {
+  sabre.classList.remove("active");
+});

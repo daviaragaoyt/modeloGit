@@ -21,16 +21,3 @@ function alterarClass() {
   }
 }
 
-function redirecionar(opcoes) {
-  var select = document.getElementById("opcoes");
-  var opcaoSelecionada = select.value;
-
-  if (opcaoSelecionada === "") {
-    event.preventDefault();
-    alert("Por favor, selecion e uma opção antes de prosseguir.");
-  } else {
-    // Redirecionar para a próxima página
-    window.location.href = "google.com";
-  }
-}
-

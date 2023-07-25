@@ -71,20 +71,10 @@ function validaPassword(senha, minDigits) {
 
 const sabre = document.getElementById("sabre");
 
-    sabre.addEventListener("mouseenter", () => {
-        sabre.classList.add("active");
-    });
+sabre.addEventListener("mouseenter", () => {
+  sabre.classList.add("active");
+});
 
-    sabre.addEventListener("mouseleave", () => {
-        sabre.classList.remove("active");
-    });
-
-    const sabre2 = document.getElementById("sabre2");
-
-    sabre.addEventListener("mouseenter", () => {
-        sabre.classList.add("active2");
-    });
-
-    sabre.addEventListener("mouseleave", () => {
-        sabre.classList.remove("active2");
-    });
+sabre.addEventListener("mouseleave", () => {
+  sabre.classList.remove("active");
+});
