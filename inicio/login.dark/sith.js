@@ -72,7 +72,7 @@ function validaPassword(senha, minDigits) {
 const sabre = document.getElementById("sabre");
 
 sabre.addEventListener("mouseenter", () => {
-  sabre.classList.add("active");
+ sabre.classList.add("active");
 });
 
 sabre.addEventListener("mouseleave", () => {

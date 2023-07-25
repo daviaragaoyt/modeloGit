@@ -1,4 +1,4 @@
-alert("Obrigado por acessar!");
+// alert("Obrigado por acessar!");
 
 const form = document.querySelector("#form");
 const nameInput = document.querySelector("#name");
@@ -63,36 +63,12 @@ function validaPassword(senha, minDigits) {
     return true
 }
 
-const meuForm = document.getElementById("meuForm");
-const enviarFormulario = document.getElementById("enviarFormulario");
-const sabre = document.getElementById("sabre");
+var yoda = $("#yoda").attr("d");
 
-meuForm.addEventListener("input", () => {
-  if (verificarFormularioPreenchido(meuForm)) {
-    sabre.classList.add("active"); // Ativar o brilho do sabre
-    enviarFormulario.disabled = false; // Habilitar o botão de envio
-  } else {
-    sabre.classList.remove("active"); // Desativar o brilho do sabre
-    enviarFormulario.disabled = true; // Desabilitar o botão de envio
-  }
-});
+TweenLite.set("svg", {visibility:"visible"})
 
-function verificarFormularioPreenchido(form) {
-  const inputs = form.querySelectorAll("input");
-  for (const input of inputs) {
-    if (!input.value.trim()) {
-      return false; // Se um campo não estiver preenchido, retorna false
-    }
-  }
-  return true; // Todos os campos estão preenchidos, retorna true
-}
-
-const sabreJedi = document.getElementById("sabreJedi");
-
-sabre.addEventListener("mouseenter", () => {
-  sabre.classList.add("active");
-});
-
-sabre.addEventListener("mouseleave", () => {
-  sabre.classList.remove("active");
-});
+var tl = new TimelineMax({repeat:0, delay:4,});
+tl.to(document.body, 1.5, {
+  backgroundColor:'#001400',
+  ease:Power2.easeInOut
+}, '-=1')
